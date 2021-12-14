@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202b36;
+}
+
+.challanges {
+  padding: 1.5vw;
+  margin: auto;
+  margin-top: 4vw;
+  width: 80%;
+  background-color: white;
+  border-radius: 0.25vw;
+}
+.chalange-heading {
+  position: relative;
+  background-color: white;
+  padding: 1vw 1.5vw;
+  font-size: 4vw;
+  margin: 0.5vw;
+  color: black;
+  text-align: center;
+}
+
+.initials {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+.initials > * {
+  display: inline-block;
+  border: 1px solid black;
+  width: 4vw;
+}
+
+.chalange {
+  position: relative;
+  background-color: white;
+  padding: 1vw 1.5vw;
+  font-size: 2vw;
+  margin: 0.5vw;
+  color: black;
+  border: 2px solid #eae6eb;
+  border-radius: 0.25vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-chalange {
+  text-align: center;
+  font-size: 2vw;
+  color: #6be675;
+  margin-top: 1vw;
+}
+
+.add-chalange > *:hover {
+  cursor: pointer;
+}
+
+.challanges > form input {
+  margin-top: 2vw;
+  color: #617d98;
+  background-color: #f1f5f8;
+  width: calc(100% - 1vw);
+}
+
+.challanges button {
+  font-size: 3vw;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 1vw;
+  top: 0.8vw;
+}
+.challanges button > *:hover {
+  cursor: pointer;
+}
+
+.success {
+  position: absolute;
+  height: 100%;
+  background-color: green;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.success > * {
+  width: 4vw;
+  height: 100%;
+  display: inline-block;
+  line-height: 4.5vw;
+  text-align: center;
+  background-color: #6be675;
+}
+
+.chalange input {
+  text-align: center;
+  font-size: 2vw;
+  width: 4vw;
+  background-color: transparent;
+  border: none;
+}
+
+.chalange input:focus {
+  outline: none;
+}
+
+.change {
+  font-size: 2.5vw;
+  position: absolute;
+  z-index: 9;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: calc(100% - 9vw);
+  text-align: right;
+  opacity: 0;
+}
+
+.change > * {
+  margin-top: 1vw;
+}
+.change:hover {
+  opacity: 1;
+}
+.change > *:hover {
+  cursor: pointer;
+}
+
+/* ******************************************************************* */
+/*  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
